@@ -15,7 +15,6 @@
   <link rel="stylesheet" href="css/blue-slider.min.css" />
   <link rel="stylesheet" href="css/fontello.css" />
   <link rel="stylesheet" href="css/style.min.css" />
-  <link rel="stylesheet" href="css/new.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -44,34 +43,29 @@
   <script>
     function onMenuClick() {
       var navbar = document.getElementById("navigation-bar");
-      var content = document.getElementById("content");
       var responsive_class_name = "responsive";
 
       navbar.classList.toggle(responsive_class_name);
-      content.style.display = "block";
     }
-
     function hideNavBar() {
-      var navbar = document.getElementById("navigation-bar");
-      var content = document.getElementById("content");
-      var responsive_class_name = "responsive";
-
-      navbar.classList.remove(responsive_class_name);
-      content.style.display = "none";
+      document.getElementById("navigation-bar").classList.remove("show");
     }
   </script>
 
   <div class="content-wrapper">
     <!-- Main content -->
     <div id="home" class="content active">
-      <div class="container container1">
+      <div class="container">
         <div class="left-section">
-          <h1>Begin your expedition into the extraordinary with<span>Epicmototours</span> </h1>
+          <h1>Begin your expedition into the extraordinary with</h1>
+          <h1 style="color: #ff4040; text-decoration: underline">
+            Epicmototours
+          </h1>
           <p>
             Aside from hosting you as a tourist, our biker community is
-            dedicated<br> to assisting you in leading extraordinary lives,
-            creating unforgettable<br> memories, and living life to the fullest.
-            Because only extreme bile travel<br> fantasies inspire epic stories.
+            dedicated to assisting you in leading extraordinary lives,
+            creating unforgettable memories, and living life to the fullest.
+            Because only extreme bile travel fantasies inspire epic stories.
             Stories that are worth listening to & sharing.
           </p>
           <button>Contact Us</button>
@@ -79,7 +73,7 @@
             Learn More
           </button>
         </div>
-        <div class="right-section1">
+        <div class="right-section">
           <div class="image-grid">
             <img src="/Images/main/IMG_20230331_021739.jpg" />
             <img src="/Images/main/IMG_20230331_021759.jpg" />
@@ -94,10 +88,10 @@
       <div class="middle-black-bar">
         <h2>Drop your gears and bike your way with Epicmototours</h2>
       </div>
-      <div class="container container2 space">
+      <div class="container">
         <div class="left-section">
           <h2>Tours</h2>
-          <p class="">
+          <p>
             Accept challenges, and embrace discomfort in the natural
             wilderness to build resilience and confidence. Tours offer a
             window into other cultures, an insider's perspective on the
@@ -112,7 +106,7 @@
           <img src="/Images/IMG_8713.jpg" />
         </div>
       </div>
-      <div class="container container2 space">
+      <div class="container">
         <div class="left-section">
           <h2>Bike rentals</h2>
           <p>
@@ -165,7 +159,7 @@
         </div>
       </div>
 
-      <div class="container container2 about-us space">
+      <div class="container">
         <div class="left-section">
           <h2>About Us</h2>
           <p>
@@ -190,8 +184,8 @@
       </div>
 
       <!-- Image gallery -->
-      <!-- <div class="slider-container first-sample">
-        <div class="slider space">
+      <div class="slider-container first-sample">
+        <div class="slider">
           <div class="item"><img src="images/pic1.jpg" alt="" /></div>
           <div class="item"><img src="images/pic2.jpg" alt="" /></div>
           <div class="item"><img src="images/pic3.jpg" alt="" /></div>
@@ -211,7 +205,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
           integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
           crossorigin="anonymous"></script>
-      </div> -->
+      </div>
 
 
     </div>
@@ -219,61 +213,34 @@
     <div id="tandc" class="content">
       <div class="text-container">
         <h2>Terms & Conditions</h2>
-        <p class="para-light">
-          EPIC TOURS is an operator of all Moto Tours on our website. Epic Tours is registered with the Department of
-          Tourism and
-          Civil Aviation, Government of
-          Himachal Pradesh, India.<br>
-        </p>
-        <p class="para-light">
-          In respect of these Booking Conditions, “We/ Epic Tours” and “You/ Participant(s)”- will be the person(s)
-          whose name and
-          details appear on the online booking
-          form.<br>
-        </p>
-        <p class="para-light">
-          The Terms and Conditions herein below form an integral part of the tour contract entered into between the
-          Participant
-          and Epic Tours. However, any express
-          Terms and Conditions set out in specific Tour Itineraries and Packages shall have precedence over the Terms
-          and
-          Conditions herein below.<br>
-        </p>
-        <p class="para-light">
-          ​The use and access of this Website by the Participant shall bind the Participant to the Terms and Conditions
-          contained
-          herein below, whether or not they have been read. As Epic Tours may revise the Terms and Conditions at any
-          time, the
-          Participants are requested to visit this Website periodically and more particularly before entering into a
-          Tour Contract
-          to review the updated Terms and Conditions.
+        <p>
+          EPIC TOURS is an operator of all Moto Tours on our website. Epic
+          Tours is registered with the Department of Tourism and Civil
+          Aviation, Government of Himachal Pradesh, India. In respect of these
+          Booking Conditions, “We/ Epic Tours” and “You/ Participant(s)”- will
+          be the person(s) whose name and details appear on the online booking
+          form. The Terms and Conditions herein below form an integral part of
+          the tour contract entered into between the Participant and Epic
+          Tours. However, any express Terms and Conditions set out in specific
+          Tour Itineraries and Packages shall have precedence over the Terms
+          and Conditions herein below. The use and access of this Website by
+          the Participant shall bind the Participant to the Terms and
+          Conditions contained herein below, whether or not they have been
+          read. As Epic Tours may revise the Terms and Conditions at any time,
+          the Participants are requested to visit this Website periodically
+          and more particularly before entering into a Tour Contract to review
+          the updated Terms and Conditions.
         </p>
         <h3>Site Contents</h3>
-        <p class="para-light">
-          All information and material, written or otherwise, including photographs, images, video clips, marks, logos,
-          designs
-          that form part of this Website shall be part of the intellectual property rights of Epic Tours.<br>
-        </p>
-        <p class="para-light">
-          The Copyrights, Trademarks, Designs and other intellectual property rights shall solely vest in and are owned
-          by Epic
-          Tours and are subject to Control and
-          License of Epic Tours.<br>
-        </p>
-        <p class="para-light">
-          Any information or contents contained or displayed on this website, may not be downloaded or copied from this
-          website.
-          No right title or interest shall vest to
-          any person by way of downloading or copying.<br>
-        </p>
-        <p class="para-light">
-          No person shall be entitled to reproduce, display, transmit, publish, sell, assign or exploit, whether
-          commercially or
-          otherwise, any information or contents,
-          either wholly or in parts, contained or displayed on this Website<br>
+        <p>
+          The information contained on this Website may contain typographical
+          errors, omissions or inaccuracies relating to itineraries and other
+          information. Epic Tours reserves their right to correct any errors,
+          omissions or inaccuracies as well as to update information anytime
+          without any prior notice.
         </p>
         <h3>Copyrights</h3>
-        <p class="para-light">
+        <p>
           All information and material, written or otherwise, including
           photographs, images, video clips, marks, logos, designs that form
           part of this Website shall be part of the intellectual property
@@ -289,123 +256,80 @@
           displayed on this Website.
         </p>
         <h3>Conduct</h3>
-        <p class="para-light">
-          Epic Tours reserve the right, at their absolute discretion, to terminate any Participant’s tour arrangements,
-          without
-          any notice, should the Participant’s behavior be such that in Epic Tours opinion, it is likely to cause
-          distress,
-          damage, annoyance or danger to any other Participant /person; or, in case the Participant is physically
-          incapable of
-          completing the Tour or in case Epic Tours have concerns about the Participant’s medical condition. In such
-          circumstances, Epic Tours shall not be liable to refund any amount or pay any compensation to the Participant.
-          .<br>
-        </p>
-        <p class="para-light">
-          You agree to abide by the authority of the leader. Signing the booking form implies your acceptance of the
-          tour
-          leader’s decisions which could affect the group or individuals. The tour leader will give you a complete
-          briefing at
-          your arrival about your journey with Epic Tours. The guide or group leader designated by the agency reserves
-          the right
-          to expel at any time a group of person or an individual whose conduct may be regarded as affecting or
-          endangering the
-          safety or well- being of the group. No compensation or refund will be due to such individuals.
-          <br>
-        </p>
-        <p class="para-light">
-
-          Epic Tours endeavors to supply you the best possible service on your journey, ensuring you have a great time.
-          However,
-          if you have a complaint during your expedition, please notify your expedition leader immediately in order to
-          rectify
-          the situation. If your complaint was unresolved, then a written letter should be sent within 30 days from the
-          expedition completion date to: Epic Tours, Hillco Building, Vill. Shuru, P.O. Prini, Manali, Distt. Kullu,
-          H.P. 17<br>
+        <p>
+          Epic Tours reserve the right, at their absolute discretion, to
+          terminate any Participant’s tour arrangements, without any notice,
+          should the Participant’s behavior be such that in Epic Tours
+          opinion, it is likely to cause distress, damage, annoyance or danger
+          to any other Participant /person; or, in case the Participant is
+          physically incapable of completing the Tour or in case Epic Tours
+          have concerns about the Participant’s medical condition. In such
+          circumstances, Epic Tours shall not be liable to refund any amount
+          or pay any compensation to the Participant. You agree to abide by
+          the authority of the leader. Signing the booking form implies your
+          acceptance of the tour leader’s decisions which could affect the
+          group or individuals. The tour leader will give you a complete
+          briefing at your arrival about your journey with Epic Tours. The
+          guide or group leader designated by the agency reserves the right to
+          expel at any time a group of person or an individual whose conduct
+          may be regarded as affecting or endangering the safety or well-
+          being of the group. No compensation or refund will be due to such
+          individuals. Epic Tours endeavors to supply you the best possible
+          service on your journey, ensuring you have a great time. However, if
+          you have a complaint during your expedition, please notify your
+          expedition leader immediately in order to rectify the situation. If
+          your complaint was unresolved, then a written letter should be sent
+          within 30 days from the expedition completion date to: Epic Tours,
+          Hillco Building, Vill. Shuru, P.O. Prini, Manali, Distt. Kullu, H.P.
+          175131
         </p>
 
         <h3>Obligations</h3>
-        <ul class="obligations" style="margin-left: 2rem;">
-          <li>
-            <p class="para-light">It is a fundamental
-              condition that you acknowledge that this is an adventure tour. This requires some flexibility. The day
-              to day
-              itinerary is taken as a guideline only. We cannot be held responsible for any delays caused by Strikes,
-              Government regulations, International or domestic flights, weather or natural casualties, force majeure.
-              In such
-              cases, Epic Tours shall be responsible for suitable alternatives which could be decided upon mutual
-              agreement.
-              If an agreement cannot be made, Epic Tours shall be responsible for refund after deducting expenses
-              already
-              incurred.</p>
-          </li>
-          <li>
-            <p class="para-light">You confirm that you are
-              in proper physical and mental condition before going on an expedition with Epic Tours. You confirm that
-              it is
-              your own responsibility to determine the ability to participate. You also confirm that you will notify
-              us about
-              any medical condition or the use of prescribed medication that we should know about. It is your duty to
-              notify
-              us beforehand and is your responsibility to obtain medical advice as regards to vaccinations required
-              for the
-              tour.</p>
-          </li>
-          <li>
-            <p class="para-light">It is our duty to ensure
-              we deliver the trip you have booked with us to the best of our ability and the it precedes in accordance
-              with
-              the itinerary as stated on our website/ tailor made to your requirement, thereafter making sure as
-              reasonable as
-              possible your journey is unhindered en-route. Our itineraries have been designed with consideration to
-              the
-              environments in which we travel. Participants’ should therefore realize that hygiene and safety
-              standards in
-              countries which you journey are far different to the standards of your own. However, Epic Tours takes
-              care when
-              booking locations, should offer the best of the area, in which you stay and dine.</p>
-          </li>
-          <li>
-            <p class="para-light">We are responsible for
-              providing and arranging the services listed in our tour itineraries and descriptions.</p>
-          </li>
-          <li>
-            <p class="para-light">We are responsible for
-              conscientious travel preparations, and we review our accommodation providers, restaurants and
-              contractors, on a
-              continuous basis.</p>
-          </li>
-          <li>
-            <p class="para-light">We reserve the right to
-              modify any part of a tour in the interests of improvement or to adapt to other situations as they
-              arise.
-            </p>
-          </li>
-          <li>
-            <p class="para-light">We will not be held
-              responsible or liable for expenses incurred as a result of delays in flights or missed
-              connections.</p>
-          </li>
-          <li>
-            <p class="para-light">We will not be held
-              responsible or liable for any delays or any changes in the schedule in response to unplanned
-              events.</p>
-          </li>
-          <li>
-            <p class="para-light">We will not be held
-              responsible or liable for any accidents and/or bodily injury or death, resulting from the use of a
-              motorcycle,
-              jeep. Riders and passengers<br>
-              indemnify all such claims against us, and our employees.</p>
-          </li>
-          <li>
-            <p class="para-light">We are not responsible
-              for any act of god, strikes, theft or other conditions beyond our control.</p>
-          </li>
-          <li>
-            <p class="para-light">We are not responsible
-              or liable for any property lost or damaged while using a rented motorcycle and/or jeep.</p>
-          </li>
-        </ul>
+        <p>
+          It is a fundamental condition that you acknowledge that this is an
+          adventure tour. This requires some flexibility. The day to day
+          itinerary is taken as a guideline only. We cannot be held
+          responsible for any delays caused by Strikes, Government
+          regulations, International or domestic flights, weather or natural
+          casualties, force majeure. In such cases, Epic Tours shall be
+          responsible for suitable alternatives which could be decided upon
+          mutual agreement. If an agreement cannot be made, Epic Tours shall
+          be responsible for refund after deducting expenses already incurred.
+          You confirm that you are in proper physical and mental condition
+          before going on an expedition with Epic Tours. You confirm that it
+          is your own responsibility to determine the ability to participate.
+          You also confirm that you will notify us about any medical condition
+          or the use of prescribed medication that we should know about. It is
+          your duty to notify us beforehand and is your responsibility to
+          obtain medical advice as regards to vaccinations required for the
+          tour. It is our duty to ensure we deliver the trip you have booked
+          with us to the best of our ability and the it precedes in accordance
+          with the itinerary as stated on our website/ tailor made to your
+          requirement, thereafter making sure as reasonable as possible your
+          journey is unhindered en-route. Our itineraries have been designed
+          with consideration to the environments in which we travel.
+          Participants’ should therefore realize that hygiene and safety
+          standards in countries which you journey are far different to the
+          standards of your own. However, Epic Tours takes care when booking
+          locations, should offer the best of the area, in which you stay and
+          dine. We are responsible for providing and arranging the services
+          listed in our tour itineraries and descriptions. We are responsible
+          for conscientious travel preparations, and we review our
+          accommodation providers, restaurants and contractors, on a
+          continuous basis. We reserve the right to modify any part of a tour
+          in the interests of improvement or to adapt to other situations as
+          they arise. We will not be held responsible or liable for expenses
+          incurred as a result of delays in flights or missed connections. We
+          will not be held responsible or liable for any delays or any changes
+          in the schedule in response to unplanned events. We will not be held
+          responsible or liable for any accidents and/or bodily injury or
+          death, resulting from the use of a motorcycle, jeep. Riders and
+          passengers indemnify all such claims against us, and our employees.
+          We are not responsible for any act of god, strikes, theft or other
+          conditions beyond our control. We are not responsible or liable for
+          any property lost or damaged while using a rented motorcycle and/or
+          jeep
+        </p>
         <h3>Booking, Cancellation & Refund</h3>
       </div>
       <div class="container-table">
@@ -474,7 +398,7 @@
       <div class="container-bike-rental">
         <div class="section-br">
           <h2>Get the best bike Rentals in Manali</h2>
-          <p class="para-light">
+          <p>
             You can now enjoy lush green views and breathtaking landscapes
             with best-in-class yet affordable ride packages from Epicmototours
           </p>
@@ -482,7 +406,7 @@
           <button>Learn More</button>
         </div>
         <h2>Our Bikes</h2>
-        <p class="para-light">
+        <p>
           Gone are the days when one had to spend lots of hard-earned money on
           adventurous bike trips.
         </p>
@@ -533,7 +457,7 @@
 
         <div style="margin-top: 20px; padding-left: 20px">
           <h1>Exploring the Heartof Manali the Snow-Capped Treasure</h1>
-          <p class="para-light">
+          <p>
             Whether you're travelling alone to find inner peace, going on an
             adventure backpacking trip with your besties, or taking your
             significant other on a honeymoon, Manali and its mountains will
@@ -560,7 +484,7 @@
             <img src="/Images/mallroad.jpg" />
 
             <h3>The Mall Road</h3>
-            <p class="para-light">
+            <p>
               The Mall Road is one of the most popular spots in Manali. It has
               numerous shops selling traditional items like shawls,
               handicrafts, and jewellery as well as modern apparel,
@@ -571,7 +495,7 @@
             <img src="/Images/hadimba.jpg" />
 
             <h3>Hadimba Temple</h3>
-            <p class="para-light">
+            <p>
               This ancient temple was built in 1553 A.D., dedicated to Hadimba
               Devi – wife of Bhima from the Mahabharata epic. It is situated
               in the middle of a dense forest and surrounded by tall deodar
@@ -583,7 +507,7 @@
             <img src="/Images/nyingmapa.jpg" />
 
             <h3>Nyingmapa Buddhist Temple</h3>
-            <p class="para-light">
+            <p>
               This ancient temple was built in 1553 A.D., dedicated to Hadimba
               Devi – wife of Bhima from the Mahabharata epic. It is situated
               in the middle of a dense forest and surrounded by tall deodar
@@ -595,7 +519,7 @@
             <img src="/Images/solang.jpg" />
 
             <h3>Solang Valley</h3>
-            <p class="para-light">
+            <p>
               Also known as Snow Point, Solang Valley offers some of the best
               skiing experiences in India with its slopes covered with snow
               from December to February. The valley also has several adventure
@@ -606,7 +530,7 @@
             <img src="/Images/hampta.jpg" />
 
             <h3>Hampta Pass</h3>
-            <p class="para-light">
+            <p>
               The Hampta Pass trek,labeledd as an easy-to-medium-difficulty
               Himalayan trek, provides breathtaking views of the Kullu Valley
               and Lahaul Valley. Another major draw of the trek is Chandratal
@@ -621,7 +545,7 @@
     <div id="tours" class="content">
       <div class="text-container">
         <h2>Tours</h2>
-        <p class="para-light">
+        <p>
           Accept challenges, and embrace discomfort in the natural wilderness
           to build resilience and confidence. Tours offer a window into other
           cultures, an insider's perspective on the location, the opportunity
@@ -636,9 +560,7 @@
         <div class="image-block img-block col-sm-6">
           <img src="/Images/hampta.jpg" />
 
-          <a href="page.html">
-            <h3 style="color: #ff4040">The Great Himalayan Motorcycle Tour</h3>
-          </a>
+          <h3 style="color: #ff4040">The Great Himalayan Motorcycle Tour</h3>
           <p>Start dates: June 2, August 29 | 22 days</p>
         </div>
         <div class="image-block img-block col-sm-6">
