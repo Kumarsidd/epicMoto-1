@@ -658,4 +658,7 @@ td {
   .about-us{
     margin-top: -12rem;
   }
+  .right-section1{
+    flex-direction: column !important;
+  }
 }
